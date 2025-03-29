@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fcfcfc;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+}
+
+.nav-elements {
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-elements ul a.active {
+  color: rgb(255, 63, 12);
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 63, 12);
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: black;
+  position: relative;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar.scrolled {
+  background-color: rgba(0,0,0,0.65); /* Background color when scrolled */
+}
+
+.menu-icon {
+  display: none;
+}
+
+.getstarted-button {
+   background-color: #FF3F0C;
+   color: white;
+}
+
+.getstarted-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.getstarted-button:disabled {
+  background: #e7e8e9;
+  color: #9fa3a9;
+  cursor: not-allowed;
+}
+
+.getstarted-btn {
+  background-color: #FF3F0C;
+  color: white;
+}
+
+.getstarted-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.getstarted-btn:disabled {
+  background: #e7e8e9;
+  color: #9fa3a9;
+  cursor: not-allowed;
+}
+
+.home-btn {
+  background-color: #FF3F0C;
+  color: white;
+}
+
+.home-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.spinner {
+  animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.footer-col .social-links a{
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  background-color: #FF3F0C;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a i{
+  font-size: x-large;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.checkmark {
+  margin-left:'auto';
+  margin-right:'5px';
+}
+
+/*Training types style*/
+
+.select {
+  width: 220px !important;
+}
+
+/*Membership Page responsiveness*/
+
+.membership-main-content {
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+}
+
+.section-two-membership {
+  float: left;
+  width: 70%;
+  border-radius: 8px
+}
+
+.section-one-membership {
+  float: right;
+  width:30%;
+  border-radius: 8px,
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  /* background-color: red; */
+
+}
+
+.footer {
+  background-color: black;
+  padding: 70px 0;
+  margin-top: 8px;
+}
+
+.footer-container ul li:hover {
+  cursor: pointer;
+  color: rgb(255, 63, 12);
+}
+
+.footer-container ul a {
+ text-decoration: none;
+}
+.training-dropdown select {
+  height: '40px';
+  font-size:'15px';
+  width: '-webkit-fill-available';
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 30%;
+  padding: 0 15px;
+}
+
+.section-one-personal-training {
+  /* background-color: #61dafb; */
+  float: right;
+  width: 50%;
+}
+
+.personal-training-page {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.nutrition-page-content {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.section-one-personal-training-page {
+  float: right;
+  width: 30%;
+  border-radius: 8px
+}
+
+.section-two-personal-training-page {
+  float: left;
+  width: 65%;
+  border-radius: 8px
+}
+
+.section-two-nutrition-page {
+  float: left;
+  width: 65%;
+  border-radius: 8px
+}
+
+.section-one-nutrition-page {
+  float: right;
+  width: 30%;
+  border-radius: 8px
+}
+
+.section-one {
+  float: right;
+  width: 50%;
+}
+
+.section-two {
+  float: left;
+  width: 50%;
+}
+
+.section-two-personalt-trai-info {
+  /* background-color: blue ; */
+  float: left;
+  width: 50%;
+}
+
+.grid-container {
+  display: grid;
+  /* max-width: 1100px; */
+  /* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
+  grid-template-columns:repeat(3, 1fr);
+  /* background-color: #2196F3; */
+  padding: 10px;
+  gap: 20px; /* Adds both row and column gap */
+  justify-content: center;
+
+}
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+  cursor: pointer;
+}
+
+.get-in-touch {
+  cursor: pointer;
+}
+
+/*Image sliding*/
+
+/* The Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Carousel track to show 3 images */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 33.33%; /* Show 3 images */
+  box-sizing: border-box;
+  cursor: pointer;
+  /* perspective: 200px; */
+}
+
+/* Slideshow images */
+.sliding-images {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+/* Dots */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.round-button-active {
+  background-color: #717171;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  text-align: center;
+  position: absolute;
+  bottom: 8px;
+}
+
+.sliding-images:hover {
+  transform: scale(1.05); /* Slightly enlarge the image */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 20); /* Add shadow */
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay on hover */
+}
+
+.previous-class {
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid white;
+}
+
+.next-class {
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid white;
+}
+
+
+/*New Slides ( extra feature card two css )*/
+
+.image-container {
+  position: relative;
+  width: 75%;
+   /* Adjust this as needed */
+  max-width: 600px;
+   /* Optional: Control the width of the container */
+  height: auto;
+  margin: 0 auto;
+}
+
+.image-one, .image-two {
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.image-one {
+  top: -530px;
+  left: 105%;
+  /* height: 380px; */
+   /* Adjust the size of the first image */
+  width: 60%;
+  /* Slight tilt to the left */
+  /* transform: rotate(-5deg);  */
+}
+
+.image-two {
+  top: -200px; /* Adjust this to control overlap */
+  left: 145%;
+  /* height: 380px; */
+  /* Adjust the size of the second image */
+  width: 60%; 
+  /* Slight tilt to the right */
+  /* transform: rotate(5deg);  */
+}
+
+.extra-features-card-two {
+  display:flex;
+  justify-content:center;
+  padding:40px;
+  background-color:#171515;
+  margin-bottom:150px;
+}
+
+.fit-angle-infrastructure {
+  margin-left:10%;
+  margin-right:10%;
+  padding-top:95px;
+  padding-bottom:95px;
+}
+
+.fit-angle-personal-training {
+  margin-left:21%;
+  margin-right:20%;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.section-one-infrastructure {
+  width:60%;
+  border-radius: 8px;
+  display:flex;
+  flex-shrink:0;
+  flex-grow:0;
+
+}
+
+.section-two-infrastructure {
+  border-radius: 8px;
+  width:50%;
+}
+
+.gym-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Add space between images */
+  justify-content: center;
+}
+
+.gym-amenities img {
+  width: calc(14% - 10px); /* Four images in a row, accounting for gaps */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* .grid-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+} */
+
+/* .card {
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 4rem;
+} */
+
+@media (max-width: 1500px) {
+  .membership-main-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .section-one-membership {
+    width: 50%;
+  }
+
+  .section-two-membership {
+    width: 90%;
+  }
+
+  .personal-training-page {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .nutrition-page-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .section-one-personal-training-page {
+    width: 50%;
+  }
+
+  .section-one-nutrition-page {
+ 
+    width: 50%;
+  }
+
+  .section-two-personal-training-page {
+    width: 50%;
+  }
+
+  .section-two-nutrition-page {
+    width: 50%;
+  }
+  
+}
+
+@media screen and (max-width: 1100px) {
+  .footer-col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (max-width: 1400px) {
+  .grid-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 1300px){
+  .image-two {
+    display: none;
+  }
+
+  .image-one {
+    top: -428px;
+    left: 100%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar{
+    background-color: rgba(0,0,0,0.65); /* Background color when scrolled */
+  }
+
+  .nav-elements {
+    position: fixed;
+    right: 0;
+    top: 60px;
+    background-color: black;
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+    margin-top: 40px;
+    height: auto;
+  }
+
+  .nav-elements.active {
+    width: 100%;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .nav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+
+  .extra-features-card-two {
+    flex-direction: column;
+  }
+
+  .fit-angle-infrastructure {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fit-angle-personal-training {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-one {
+    position: static !important;
+    /* margin: 0 !important; */
+  }
+
+  .section-two-infrastructure {
+    width: 100% !important;
+    margin-bottom: 10% !important;
+  }
+
+  .section-two-personalt-trai-info {
+    width: 100% !important;
+    margin-top: 10%;
+  }
+
+  .section-one-membership {
+    width: 70%;
+  }
+
+  .section-two-personal-training-page {
+    width: 70%;
+  }
+
+  .section-two-nutrition-page {
+    width: 70%;
+  }
+
+  .grid-container { 
+    grid-template-columns:1fr; 
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .footer-col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 400px){
+  .training-dropdown select {
+    width: 100%; /* Full width on small screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .gym-amenities img {
+      width: calc(45% - 10px); 
+      max-width: 120px;
+  }
+
+  .personal-training-page {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .nutrition-page-content {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .section-one-personal-training-page {
+    width: 60%;
+  }
+
+  .section-one-nutrition-page {
+    width: 60%;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .gym-amenities img {
+      width: 80%;
+      height: auto;
+      max-width: none;
+  }
+
+  .section-one-personal-training-page {
+    width: 90%;
+  }
+
+  .section-one-nutrition-page {
+    width: 90%;
+  }
+
+ .section-one-membership {
+    width: 90%;
+  }
+}
+
+/*Sliding images css*/
+
+/* Show only 2 items for tablets */
+@media (max-width: 1024px) {
+  .carousel-item {
+     min-width: 50%;
+  }
+}
+
+/* Show only 1 item for mobile */
+@media (max-width: 768px) {
+  .carousel-item {
+     min-width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .sliding-images {
+    width: 250px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
